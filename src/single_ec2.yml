@@ -9,8 +9,12 @@ Mappings:
   AWSInstanceType2Arch:
     t2.micro:
       Arch: HVM64
+    t2.medium:
+      Arch: HVM64
   AWSInstanceType2NATArch:
     t2.micro:
+      Arch: NATHVM64
+    t2.medium:
       Arch: NATHVM64
   AWSRegionArch2AMI:
     us-east-1:
@@ -41,9 +45,9 @@ Outputs:
 Parameters:
   InstanceType:
     AllowedValues:
-    - t2.micro
+    - t2.medium
     ConstraintDescription: must be a valid EC2 instance type.
-    Default: t2.micro
+    Default: t2.medium
     Description: EKS - Optimized AMI
     Type: String
   KeyName:
