@@ -18,7 +18,11 @@ Mappings:
       Arch: NATHVM64
   AWSRegionArch2AMI:
     us-east-1:
-      HVM64: ami-0a0b913ef3249b655
+      HVM64: ami-0b4eb1d8782fc3aea
+    us-east-2:
+      HVM64: ami-053cbe66e0033ebcf
+    us-west-2:
+      HVM64: ami-094fa4044a2a3cf52
 Outputs:
   AZ:
     Description: Availability Zone of the newly created EC2 instance
