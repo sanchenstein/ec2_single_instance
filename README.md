@@ -1,1 +1,1 @@
-The following script is a CloudFormation script for a basic single EC2 instance.
+CloudFormation script for a single EC2 instance.
